@@ -1,0 +1,76 @@
+.header {
+  text-align: center;
+}
+
+section h1 {
+  color: var(--color-white);
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+section p {
+  font-size: 0.9rem;
+  margin: 2rem;
+}
+
+section h2,
+h3 {
+  color: var(--primary-color);
+  margin: 1rem;
+}
+
+section h5 {
+  font-weight: lighter;
+  color: var(--color-white);
+}
+
+.header__image {
+  background-image: linear-gradient(10deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/welcome.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: 20%;
+}
+
+.header__container {
+  width: 50%;
+  height: 90vh;
+  margin-bottom: 2rem;
+}
+
+.header__results {
+  text-align: center;
+}
+
+.header__result {
+  width: 100%;
+  height: 93%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.header__result img {
+  width: 50%;
+  aspect-ratio: 1/2;
+  padding-bottom: 20%;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: var(--primary-color);
+  transition: var(--transition);
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  .header__result img {
+    width: 70%;
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  .header__result img {
+    width: 100%;
+  }
+}

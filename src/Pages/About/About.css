@@ -1,0 +1,30 @@
+.about {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.about__image {
+  width: 100%;
+  margin-bottom: 5%;
+  padding: 5% 0;
+  display: grid;
+  place-items: center;
+}
+
+.about__image img {
+  width: 40%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  filter: brightness(1.5);
+  box-shadow: 0 0 10px #007aff;
+}
+
+.about__header {
+  color: var(--primary-color);
+}
+
+.about__content {
+  text-align: justify;
+  padding: 1rem 3rem;
+  line-height: 2rem;
+}

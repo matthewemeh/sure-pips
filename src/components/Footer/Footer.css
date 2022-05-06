@@ -1,13 +1,12 @@
 footer {
-  border: 1px solid #fa8072;
   text-align: center;
   margin: auto;
-  padding: 2rem;
+  padding: 0.7rem;
 }
 
 footer h2 {
   color: var(--primary-color);
-  padding: 1.5rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
@@ -21,7 +20,7 @@ footer h2 {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .footer__socials a {
@@ -38,6 +37,6 @@ footer h2 {
 }
 
 .footer__copyright {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   color: #000;
 }
