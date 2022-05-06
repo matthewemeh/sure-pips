@@ -1,0 +1,63 @@
+.navigation__icons {
+  background: var(--primary-color-light);
+  width: max-content;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: calc(50% - 10.7rem);
+  bottom: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+  border-color: transparent;
+}
+
+nav a {
+  font-size: 2rem;
+  border-radius: 2rem;
+  background: #69c4f0bf;
+  color: var(--primary-color);
+  padding: 0.3rem;
+  margin: 0.5rem auto;
+}
+
+nav a:hover {
+  background: var(--primary-color-medium);
+}
+
+.navigation__indicator {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 5rem;
+  z-index: 2;
+  background: var(--primary-color);
+  position: fixed;
+  border-color: transparent;
+  bottom: 2.3rem;
+  transition: var(--transition);
+}
+
+.navigation__indicator1 {
+  left: calc(50% - 7.6rem);
+}
+
+.navigation__indicator2 {
+  left: calc(50% - 3.3rem);
+}
+
+.navigation__indicator3 {
+  left: calc(50% + 0.5rem);
+}
+
+.navigation__indicator4 {
+  left: calc(50% + 4.7rem);
+}
+
+.navigation__indicator5 {
+  left: calc(50% + 8.7rem);
+}
+
+#inactive {
+  background: transparent;
+}

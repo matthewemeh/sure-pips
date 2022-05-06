@@ -1,0 +1,98 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: bold;
+  src: url(./assets/fonts/Poppins-SemiBold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: default;
+}
+
+:root {
+  --primary-color: #007aff;
+  --primary-color-medium: #69c4f0a0;
+  --primary-color-light: #007aff30;
+  --color-white: #fff;
+  --color-black: #000;
+
+  --transition: all 400ms ease-in;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background: var(--color-white);
+  color: var(--color-white);
+  line-height: 1.7;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+section {
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  margin: 1rem auto;
+  color: var(--primary-color);
+}
+
+img {
+  display: block;
+  width: 95%;
+  object-fit: cover;
+}
+
+a {
+  display: flex;
+  color: var(--primary-color-medium);
+  background: transparent;
+  transition: var(--transition);
+}
+
+a:hover {
+  background: var(--primary-color-light);
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 1rem;
+  text-align: center;
+  border: 1px solid transparent;
+  background: var(--primary-color);
+  color: var(--color-white);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: transparent;
+  border-color: var(--primary-color-medium);
+}
