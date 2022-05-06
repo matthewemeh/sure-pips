@@ -1,82 +1,55 @@
 import React from 'react';
 import './Navigation.css';
-import { MdHistoryEdu } from 'react-icons/md';
-import { RiQuestionLine, RiServiceLine } from 'react-icons/ri';
-import { TiHomeOutline } from 'react-icons/ti';
-import { BiUserPin } from 'react-icons/bi';
+import webIcon from '../../assets/website_icon.png';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
-  const [activePage, setActivePage] = React.useState('#');
+  const [activePage, setActivePage] = React.useState('home');
 
   return (
-    <nav>
-      <div className='navigation__icons'>
-        <a
-          href='#'
-          className={activePage === '#' ? 'active' : 'inactive'}
-          onClick={() => setActivePage('#')}
-        >
-          <TiHomeOutline className='navigation__icon' />
-        </a>
+    <div className='navigation__head'>
+      <div className='navigation__intro'>
+        <div className='navigation__icon'>
+          <img src={webIcon} alt='web-icon' />
+        </div>
 
-        <a
-          href='#history'
-          className={activePage === '#history' ? 'active' : 'inactive'}
-          onClick={() => setActivePage('#history')}
-        >
-          <MdHistoryEdu className='navigation__icon' />
-        </a>
-
-        <a
-          href='#about'
-          className={activePage === '#about' ? 'active' : 'inactive'}
-          onClick={() => setActivePage('#about')}
-        >
-          <BiUserPin className='navigation__icon' />
-        </a>
-
-        <a
-          href='#faq'
-          className={activePage === '#faq' ? 'active' : 'inactive'}
-          onClick={() => setActivePage('#faq')}
-        >
-          <RiQuestionLine className='navigation__icon' />
-        </a>
-
-        <a
-          href='#contact'
-          className={activePage === '#contact' ? 'active' : 'inactive'}
-          onClick={() => setActivePage('#contact')}
-        >
-          <RiServiceLine className='navigation__icon' />
-        </a>
+        <h2>Sure Pips</h2>
       </div>
 
-      <div
-        className='navigation__indicator navigation__indicator1'
-        id={activePage === '#' ? 'active' : 'inactive'}
-      />
+      <nav className='navigation__links'>
+        <Link
+          to='/'
+          className={activePage === 'home' ? 'active' : 'inactive'}
+          onClick={() => setActivePage('home')}
+        >
+          Home
+        </Link>
 
-      <div
-        className='navigation__indicator navigation__indicator2'
-        id={activePage === '#history' ? 'active' : 'inactive'}
-      />
+        <Link
+          to='/history'
+          className={activePage === 'history' ? 'active' : 'inactive'}
+          onClick={() => setActivePage('history')}
+        >
+          History
+        </Link>
 
-      <div
-        className='navigation__indicator navigation__indicator3'
-        id={activePage === '#about' ? 'active' : 'inactive'}
-      />
+        <Link
+          to='/about'
+          className={activePage === 'about' ? 'active' : 'inactive'}
+          onClick={() => setActivePage('about')}
+        >
+          About
+        </Link>
 
-      <div
-        className='navigation__indicator navigation__indicator4'
-        id={activePage === '#faq' ? 'active' : 'inactive'}
-      />
-
-      <div
-        className='navigation__indicator navigation__indicator5'
-        id={activePage === '#contact' ? 'active' : 'inactive'}
-      />
-    </nav>
+        <Link
+          to='/faq'
+          className={activePage === 'faq' ? 'active' : 'inactive'}
+          onClick={() => setActivePage('faq')}
+        >
+          FAQ
+        </Link>
+      </nav>
+    </div>
   );
 };
 

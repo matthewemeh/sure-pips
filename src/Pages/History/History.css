@@ -1,0 +1,42 @@
+.history {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.history h4 {
+  margin-bottom: 5%;
+  border: 1px solid salmon;
+}
+
+.history__header {
+  text-align: left;
+  margin: 0 20%;
+  border: 1px solid salmon;
+  width: fit-content;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.results div {
+  margin: 0 20%;
+}
+
+.history__body {
+}
+
+.history article {
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  .results {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+}

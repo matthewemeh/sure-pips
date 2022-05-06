@@ -1,21 +1,29 @@
 import React from 'react';
 import './Header.css';
-import WelcomeImage from '../../assets/welcome.jpg';
+import Result1 from '../../assets/Result1.jpg';
+import Result2 from '../../assets/Result2.jpg';
+import { Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const Header = () => {
+  const results = [
+    { id: 1, image: Result1 },
+    { id: 2, image: Result2 },
+  ];
+
   return (
-    <header id='header'>
-      <h1>SURE PIPS</h1>
+    <section className='header'>
+      <div className='header__image'>
+        <h1>SURE PIPS</h1>
 
-      <h5>
-        <i>The most reliable source for currency signals...</i>
-      </h5>
-
-      <div className='header_image'>
-        <img src={WelcomeImage} alt='welcome_image' />
+        <h5>
+          <i>The most reliable source for currency signals...</i>
+        </h5>
       </div>
 
-      <h3>- Our Mission -</h3>
+      <h2>- Our Mission -</h2>
 
       <h4>
         <i>
@@ -26,7 +34,31 @@ const Header = () => {
           mean business
         </i>
       </h4>
-    </header>
+
+      <h3>Let our results do the talking...</h3>
+
+      <Swiper
+        className='header__container'
+        modules={[Pagination]}
+        spaceBetween={10}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+      >
+        {results.map(result => (
+          <SwiperSlide key={result.id} className='header__results'>
+            <div
+              className='header__result'
+              style={{
+                backgroundImage: `url(${result.image})`,
+                backgroundSize: 'cover',
+                padding: '50%',
+                width: '100%',
+              }}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
   );
 };
 

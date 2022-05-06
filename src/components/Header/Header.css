@@ -1,31 +1,57 @@
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 2rem 5rem;
+.header {
+  text-align: center;
 }
 
-h1 {
-  position: relative;
-  top: 6rem;
+section h1 {
   color: var(--color-white);
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
 }
 
-h4 {
+section h4 {
   font-size: 0.9rem;
-  padding: 0 15rem;
+  margin: 2rem;
 }
 
-h5 {
+section h2,
+h3 {
+  color: var(--primary-color);
+  margin: 1rem;
+}
+
+section h5 {
   font-weight: lighter;
-  position: relative;
-  top: 5rem;
   color: var(--color-white);
 }
 
-img {
-  margin: -6rem auto 1rem;
-  border-radius: 1rem;
-  box-shadow: 1rem 0rem 0.8rem rgba(0, 0, 0, 0.3), 0 1rem 0.8rem rgba(0, 0, 0, 0.3),
-    0 -1rem 0.8rem rgba(0, 0, 0, 0.3), -1rem 0 0.8rem rgba(0, 0, 0, 0.3);
+.header__image {
+  background-image: linear-gradient(10deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/welcome.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: 20%;
+}
+
+.header__container {
+  width: 50%;
+  height: 90vh;
+  margin-bottom: 2rem;
+}
+
+.header__results {
+  text-align: center;
+  border: 1px dashed black;
+  /* padding: 10%; */
+}
+
+.header__result {
+  width: 50%;
+  height: 100%;
+  border: 1px dashed red;
+  margin: 5% auto;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: var(--primary-color);
+  transition: var(--transition);
 }

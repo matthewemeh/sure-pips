@@ -34,14 +34,13 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 body {
   font-family: Poppins, sans-serif;
   background: var(--color-white);
-  color: var(--color-white);
   line-height: 1.7;
 }
 
@@ -50,36 +49,8 @@ body {
   margin: 0 auto;
 }
 
-section {
-  margin: 0 auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: center;
-  margin: 1rem auto;
-  color: var(--primary-color);
-}
-
-img {
-  display: block;
-  width: 95%;
-  object-fit: cover;
-}
-
 a {
-  display: flex;
-  color: var(--primary-color-medium);
-  background: transparent;
-  transition: var(--transition);
-}
-
-a:hover {
-  background: var(--primary-color-light);
+  cursor: pointer;
 }
 
 .btn {
