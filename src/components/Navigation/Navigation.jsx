@@ -4,7 +4,8 @@ import webIcon from '../../assets/website_icon.png';
 import { Link } from 'react-router-dom';
 
 const Navigation = () => {
-  const [activePage, setActivePage] = React.useState('home');
+  const currentUrl = window.location.pathname;
+  const [activePage, setActivePage] = React.useState(currentUrl);
 
   return (
     <div className='navigation__head'>
@@ -19,32 +20,32 @@ const Navigation = () => {
       <nav className='navigation__links'>
         <Link
           to='/'
-          className={activePage === 'home' ? 'active' : 'inactive'}
-          onClick={() => setActivePage('home')}
+          className={activePage === '/' ? 'active' : 'inactive'}
+          onClick={() => setActivePage('/')}
         >
           Home
         </Link>
 
         <Link
           to='/history'
-          className={activePage === 'history' ? 'active' : 'inactive'}
-          onClick={() => setActivePage('history')}
+          className={activePage === '/history' ? 'active' : 'inactive'}
+          onClick={() => setActivePage('/history')}
         >
           History
         </Link>
 
         <Link
           to='/about'
-          className={activePage === 'about' ? 'active' : 'inactive'}
-          onClick={() => setActivePage('about')}
+          className={activePage === '/about' ? 'active' : 'inactive'}
+          onClick={() => setActivePage('/about')}
         >
           About
         </Link>
 
         <Link
           to='/faq'
-          className={activePage === 'faq' ? 'active' : 'inactive'}
-          onClick={() => setActivePage('faq')}
+          className={activePage === '/faq' ? 'active' : 'inactive'}
+          onClick={() => setActivePage('/faq')}
         >
           FAQ
         </Link>

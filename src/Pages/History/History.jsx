@@ -5,8 +5,8 @@ import Result2 from '../../assets/Result2.jpg';
 
 const History = () => {
   const bestResults = [
-    { id: 1, image: Result1, date: '11-12-2021' },
-    { id: 2, image: Result2, date: '11-12-2021' },
+    { id: 1, image: Result1, date: '2022-03-18' },
+    { id: 2, image: Result2, date: '2022-03-18' },
   ];
   return (
     <section className='history'>

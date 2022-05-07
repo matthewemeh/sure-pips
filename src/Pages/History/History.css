@@ -1,10 +1,10 @@
 .history {
-  margin: 10% 0 30%;
+  margin: 10% 0 5%;
   text-align: center;
 }
 
 .history__header h2 {
-  padding-left: 1%;
+  transform: translate(-2%);
 }
 
 .history__header h4 {
@@ -32,22 +32,21 @@
   margin: auto;
 }
 
-.history__body {
-}
-
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
   .history {
     margin-top: 15%;
+    margin-bottom: 10%;
   }
 
   .history__results {
     grid-template-columns: 1fr;
     row-gap: 5%;
+    transform: translate(-3%);
   }
 
   .history__header h2 {
-    padding-left: 2%;
+    transform: translate(-3%);
   }
 }
 
@@ -58,6 +57,6 @@
   }
 
   .history__header h2 {
-    padding-left: 3%;
+    transform: translate(-5%);
   }
 }

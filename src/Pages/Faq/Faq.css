@@ -1,0 +1,38 @@
+.faq {
+  margin-top: 8%;
+}
+
+.faq h2 {
+  color: var(--primary-color);
+}
+
+.faq__answered-questions {
+  margin: 3% 0 20%;
+}
+
+.answer {
+  transform: translate(-2%);
+  width: 60%;
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  .faq {
+    margin-top: 10%;
+  }
+
+  .answer {
+    transform: translate(-2.5%);
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  .faq {
+    margin-top: 15%;
+  }
+
+  .answer {
+    width: 90%;
+  }
+}

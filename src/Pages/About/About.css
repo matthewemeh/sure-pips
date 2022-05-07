@@ -5,7 +5,6 @@
 
 .about__image {
   width: 100%;
-  margin-bottom: 5%;
   padding: 5% 0;
   display: grid;
   place-items: center;
@@ -15,16 +14,32 @@
   width: 40%;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  filter: brightness(1.5);
-  box-shadow: 0 0 10px #007aff;
+  filter: brightness(1.5) saturate(2);
+  border: 1rem solid var(--primary-color);
 }
 
 .about__header {
+  font-size: 1.5rem;
   color: var(--primary-color);
 }
 
 .about__content {
   text-align: justify;
   padding: 1rem 3rem;
-  line-height: 2rem;
+  line-height: 1.7rem;
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  .about__content {
+    padding: 1rem 0rem;
+  }
+
+  .about__image img {
+    border-width: 0.5rem;
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
 }

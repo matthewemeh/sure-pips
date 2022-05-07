@@ -20,6 +20,7 @@ h3 {
 }
 
 section h5 {
+  font-size: 1.1rem;
   font-weight: lighter;
   color: var(--color-white);
 }

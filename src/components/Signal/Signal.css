@@ -1,0 +1,52 @@
+.signal__head {
+  font-weight: bold;
+  text-align: center;
+}
+
+.signal__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 20%;
+  margin: 0 40%;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.signal__pair {
+  height: 100%;
+  padding: 1rem 0;
+  background-color: var(--color-white);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid var(--buy-color);
+}
+
+.signal__action {
+  padding: 1rem 0;
+  background-color: var(--color-white);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+  background-color: var(--buy-color);
+  color: var(--color-white);
+}
+
+.signal a {
+  color: var(--primary-color);
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  .signal__box {
+    width: 30%;
+    margin: 0 35%;
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  .signal__box {
+    width: 45%;
+    margin: 0 27.5%;
+  }
+}
