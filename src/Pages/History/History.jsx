@@ -1,7 +1,7 @@
 import React from 'react';
 import './History.css';
-import Result1 from '../../assets/Result1.jpg';
-import Result2 from '../../assets/Result2.jpg';
+import Result1 from '../../assets/Result1.webp';
+import Result2 from '../../assets/Result2.webp';
 
 const History = () => {
   const bestResults = [
@@ -26,7 +26,7 @@ const History = () => {
         <div className='history__results'>
           {bestResults.map(result => (
             <div key={result.id}>
-              <img src={result.image} alt={`result ${result.id}`} />
+              <img src={result.image} alt={`meta trading(mt4) forex trading result ${result.id}`} />
               <p>{`Results from ${result.date}`}</p>
             </div>
           ))}

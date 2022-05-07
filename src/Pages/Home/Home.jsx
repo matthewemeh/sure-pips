@@ -1,10 +1,10 @@
 import React from 'react';
 import './Home.css';
 import Signal from '../../components/Signal/Signal';
-import Result1 from '../../assets/Result1.jpg';
-import Result2 from '../../assets/Result2.jpg';
-import Result3 from '../../assets/Result3.jpg';
-import Result4 from '../../assets/Result4.jpg';
+import Result1 from '../../assets/Result1.webp';
+import Result2 from '../../assets/Result2.webp';
+import Result3 from '../../assets/Result3.webp';
+import Result4 from '../../assets/Result4.webp';
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -54,7 +54,7 @@ const Home = props => {
         {results.map(result => (
           <SwiperSlide key={result.id} className='header__results'>
             <div className='header__result'>
-              <img src={result.image} alt={`image_${result.id}`} />
+              <img src={result.image} alt={`meta trading(mt4) trading image_${result.id}`} />
             </div>
           </SwiperSlide>
         ))}

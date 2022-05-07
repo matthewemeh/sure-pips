@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navigation.css';
-import webIcon from '../../assets/website_icon.png';
+import webIcon from '../../assets/website_icon.webp';
 import { Link } from 'react-router-dom';
 
 const Navigation = () => {

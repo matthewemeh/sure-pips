@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import pioneer from '../../assets/pioneer.png';
+import pioneer from '../../assets/pioneer.webp';
 
 const About = () => {
   return (
