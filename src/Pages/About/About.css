@@ -1,11 +1,11 @@
 .about {
-  margin-top: 10%;
+  margin-top: 15vh;
   text-align: center;
 }
 
 .about__image {
   width: 100%;
-  padding: 5% 0;
+  padding: 3% 0;
   display: grid;
   place-items: center;
 }
@@ -14,8 +14,9 @@
   width: 40%;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  filter: brightness(1.5) saturate(2);
-  border: 1rem solid var(--primary-color);
+  filter: brightness(1.3) saturate(1.5);
+  border: 1rem solid var(--primary-color-dark);
+  transition: var(--transition);
 }
 
 .about__header {
@@ -23,10 +24,21 @@
   color: var(--primary-color);
 }
 
+.about__div {
+  width: 60%;
+  margin: 5% 20%;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
+  transition: var(--transition);
+}
+
 .about__content {
   text-align: justify;
   padding: 1rem 3rem;
-  line-height: 1.7rem;
+  line-height: 2rem;
+  opacity: 0.8;
+  transition: var(--transition);
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
@@ -38,8 +50,9 @@
   .about__image img {
     border-width: 0.5rem;
   }
-}
 
-/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
-@media screen and (max-width: 600px) {
+  .about__div {
+    width: 90%;
+    margin: 10% 5%;
+  }
 }

@@ -1,14 +1,21 @@
 .history {
-  margin: 10% 0 5%;
+  margin: 15vh 0 10vh;
   text-align: center;
 }
 
-.history__header h2 {
-  transform: translate(-2%);
+.history h2 {
+  color: var(--primary-color);
 }
 
-.history__header h4 {
-  margin-bottom: 5%;
+.history__header h2 {
+  margin: 2% 0;
+}
+
+.history__header p {
+  line-height: 2rem;
+  word-spacing: 0.3rem;
+  margin: 0 0 5%;
+  opacity: 0.7;
 }
 
 .history__header {
@@ -20,12 +27,19 @@
 .history__results {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  transition: var(--transition);
+}
+
+.history__results p {
+  opacity: 0.7;
 }
 
 .history__results img {
   width: 50%;
   aspect-ratio: 1/2;
-  padding-bottom: 5%;
+  border-radius: 1rem;
+  box-shadow: 0 12px 28px 0px rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+    0 25px 20px -20px rgba(0, 0, 0, 0.45);
 }
 
 .history__results div {
@@ -34,29 +48,9 @@
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
-  .history {
-    margin-top: 15%;
-    margin-bottom: 10%;
-  }
-
   .history__results {
     grid-template-columns: 1fr;
     row-gap: 5%;
     transform: translate(-3%);
-  }
-
-  .history__header h2 {
-    transform: translate(-3%);
-  }
-}
-
-/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
-@media screen and (max-width: 600px) {
-  .history {
-    margin-top: 20%;
-  }
-
-  .history__header h2 {
-    transform: translate(-5%);
   }
 }

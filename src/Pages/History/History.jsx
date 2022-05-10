@@ -13,25 +13,30 @@ const History = () => {
       <article className='history__header'>
         <h2>Where we are today?</h2>
 
-        <h4>
+        <p>
           Sure Pips is currently expanding its reach to traders who are new to the Foreign Exchange
           Market. Already established Forex Traders are also free to share from our wealth of
           experience.
-        </h4>
+        </p>
       </article>
 
-      <h2>Our Best Results</h2>
+      <div className='history__div'>
+        <h2>Our Best Results</h2>
 
-      <article className='history__body'>
-        <div className='history__results'>
-          {bestResults.map(result => (
-            <div key={result.id}>
-              <img src={result.image} alt={`meta trading(mt4) forex trading result ${result.id}`} />
-              <p>{`Results from ${result.date}`}</p>
-            </div>
-          ))}
-        </div>
-      </article>
+        <article className='history__body'>
+          <div className='history__results'>
+            {bestResults.map(result => (
+              <div key={result.id}>
+                <img
+                  src={result.image}
+                  alt={`meta trading(mt4) forex trading result ${result.id}`}
+                />
+                <p>{`Results from ${result.date}`}</p>
+              </div>
+            ))}
+          </div>
+        </article>
+      </div>
     </section>
   );
 };

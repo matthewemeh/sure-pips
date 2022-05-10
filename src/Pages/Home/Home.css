@@ -2,24 +2,26 @@
   text-align: center;
 }
 
-section h1 {
+.header h1 {
+  width: 100%;
   color: var(--color-white);
   font-size: 2rem;
   margin-bottom: 0.8rem;
+  padding: 25% 0 10%;
 }
 
-section p {
+.header p {
   font-size: 0.9rem;
   margin: 2rem;
 }
 
-section h2,
-h3 {
+.header h2,
+.header h3 {
   color: var(--primary-color);
   margin: 1rem;
 }
 
-section h5 {
+.header h5 {
   font-size: 1.1rem;
   font-weight: lighter;
   color: var(--color-white);
@@ -35,10 +37,21 @@ section h5 {
 
 .header__container {
   width: 50%;
-  height: 90vh;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
+.header__mission {
+  width: 50%;
+  margin: 5% 25%;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
+  transition: var(--transition);
+}
+
+.header__mission p {
+  opacity: 0.7;
+}
 .header__results {
   text-align: center;
 }
@@ -49,12 +62,17 @@ section h5 {
   overflow: hidden;
   display: grid;
   place-items: center;
+  padding: 0.5rem 1rem;
 }
 
 .header__result img {
   width: 50%;
   aspect-ratio: 1/2;
-  padding-bottom: 20%;
+  box-shadow: 0 12px 28px 0px rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+    0 25px 20px -20px rgba(0, 0, 0, 0.45);
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  transition: var(--transition);
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
@@ -66,6 +84,11 @@ section h5 {
 @media screen and (max-width: 1024px) {
   .header__result img {
     width: 70%;
+  }
+
+  .header__mission {
+    width: 90%;
+    margin: 10% 5%;
   }
 }
 

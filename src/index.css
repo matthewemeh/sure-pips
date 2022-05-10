@@ -22,23 +22,25 @@
 
 :root {
   --primary-color: #007aff;
-  --primary-color-medium: #69c4f0a0;
-  --primary-color-light: #007aff30;
+  --primary-color-lighter: #73b6ff;
+  --primary-color-light: #1987ff;
+  --primary-color-dark: #0062cc;
+  --primary-color-darker: #004999;
+  --primary-light-shade: #c2d9f2;
+  --primary-accent: #00254d;
+
   --buy-color: #34c240;
   --sell-color: #d64242;
   --color-white: #fff;
   --color-black: #000;
 
   --transition: all 400ms ease-in;
+  --transition2: all 200ms ease-in;
 }
 
 html {
   scroll-behavior: smooth;
 }
-
-/* ::-webkit-scrollbar {
-  display: none;
-} */
 
 body {
   font-family: Poppins, sans-serif;
@@ -46,26 +48,6 @@ body {
   line-height: 1.7;
 }
 
-.container {
-  text-align: center;
-  margin: 0 auto;
-}
-
 a {
   cursor: pointer;
-}
-
-.btn {
-  display: inline-block;
-  border-radius: 1rem;
-  text-align: center;
-  border: 1px solid transparent;
-  background: var(--primary-color);
-  color: var(--color-white);
-  transition: var(--transition);
-}
-
-.btn:hover {
-  background: transparent;
-  border-color: var(--primary-color-medium);
 }

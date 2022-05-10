@@ -1,38 +1,50 @@
 .faq {
-  margin-top: 8%;
+  margin-top: 15vh;
 }
 
 .faq h2 {
+  margin: 0 4rem;
+  color: var(--primary-color);
+}
+
+.faq h3 {
+  margin: 1rem;
   color: var(--primary-color);
 }
 
 .faq__answered-questions {
-  margin: 3% 0 20%;
+  margin: 3% 0 10%;
+}
+
+.faq_icon-question {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+}
+
+.faq__answered-questions article {
+  width: 50%;
+  margin: 4% 25%;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
+  transition: var(--transition);
 }
 
 .answer {
-  transform: translate(-2%);
-  width: 60%;
+  margin: 0 1rem 2rem;
+  width: 95%;
+  opacity: 0.75;
+  word-spacing: 0.4rem;
+  line-height: 1.5rem;
+  transition: var(--transition);
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
-  .faq {
-    margin-top: 10%;
-  }
-
-  .answer {
-    transform: translate(-2.5%);
-  }
-}
-
-/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
-@media screen and (max-width: 600px) {
-  .faq {
-    margin-top: 15%;
-  }
-
-  .answer {
-    width: 90%;
+  .faq__answered-questions article {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }

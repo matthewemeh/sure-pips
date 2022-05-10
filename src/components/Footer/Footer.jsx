@@ -10,7 +10,7 @@ const Footer = props => {
   const socials = socialLinks && [
     {
       icon: <AiOutlineMail className='footer__icon' />,
-      href: socialLinks.email,
+      href: `mailto:${socialLinks.email}`,
     },
     {
       icon: <BsWhatsapp className='footer__icon' />,
@@ -38,7 +38,7 @@ const Footer = props => {
           ))}
         </div>
         <div className='footer__copyright'>
-          <small>&copy; SURE PIPS. All Rights Reserved.</small>
+          <small>&copy; SURE PIPS 2022. All Rights Reserved.</small>
         </div>
       </footer>
     )

@@ -23,22 +23,20 @@ const Home = props => {
       <div className='header__image'>
         <h1>SURE PIPS</h1>
 
-        <h5>
-          <i>The most reliable source for currency signals...</i>
-        </h5>
+        <h5>The most reliable source for currency signals...</h5>
       </div>
 
-      <h2>- Our Mission -</h2>
+      <div className='header__mission'>
+        <h2>- Our Mission -</h2>
 
-      <p>
-        <i>
+        <p>
           At Sure Pips, we offer a perfect guide into the Foreign Exchange market by providing
           expertly sourced trading signals (pips) and a variety of tools to assist traders and guide
           our customers away from false insights and wrong sources. Our premium social media forums
           are also available to ensure adequate assistance for all our customers . At Sure Pips, we
           mean business.
-        </i>
-      </p>
+        </p>
+      </div>
 
       <Signal signalInfo={props.signalInfo} />
 

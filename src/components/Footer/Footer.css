@@ -2,7 +2,7 @@ footer {
   text-align: center;
   margin: auto;
   padding: 0.7rem;
-  background: var(--primary-color);
+  background: var(--primary-color-darker);
 }
 
 footer h2 {
@@ -19,8 +19,10 @@ footer h2 {
 .footer__socials {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 7rem;
   margin-bottom: 1rem;
+  transition: var(--transition);
 }
 
 .footer__socials a {
@@ -34,7 +36,7 @@ footer h2 {
 
 .footer__socials a:hover {
   background: var(--color-white);
-  color: var(--primary-color);
+  color: var(--primary-color-darker);
   border: 1px solid var(--color-white);
 }
 

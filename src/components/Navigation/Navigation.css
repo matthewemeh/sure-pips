@@ -5,14 +5,17 @@
   height: 10vh;
   width: 100%;
   position: fixed;
+  box-shadow: 0 0.1rem 10px 5px rgba(0, 0, 0, 0.25);
   top: 0;
   z-index: 2;
+  transition: var(--transition);
 }
 
 .navigation__intro {
   display: grid;
   grid-template-columns: 20% 80%;
   width: 30%;
+  transition: var(--transition);
 }
 
 .navigation__icon {
@@ -23,12 +26,44 @@
   align-items: center;
   justify-self: center;
   overflow: hidden;
+  transition: var(--transition);
+}
+
+nav a {
+  font-size: 1rem;
+  padding: 0.1rem;
+  margin: auto;
+  cursor: pointer;
+  color: var(--color-white);
+  transition: var(--transition2);
 }
 
 .navigation__links {
   display: flex;
   padding: 0.7rem 1.7rem;
   gap: 1.5rem;
+  overflow: hidden;
+}
+
+.navigation__more {
+  color: var(--color-white);
+  font-size: 2rem;
+  display: none;
+  text-align: center;
+  margin: 1% 2%;
+  height: 80%;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.navigation__close {
+  background-color: var(--color-white);
+  color: var(--primary-accent);
+  font-size: 1.5rem;
+  display: none;
+  margin: 0 95%;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .navigation__intro img {
@@ -44,25 +79,65 @@
   color: var(--color-white);
 }
 
-nav a {
-  font-size: 1rem;
-  padding: 0.1rem;
-  margin: auto;
-  cursor: pointer;
-  color: var(--color-white);
-}
-
 .active {
   color: var(--primary-color);
 }
 
-/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
-@media screen and (max-width: 1024px) {
+/* ================ MEDIA QUERIES (TABLETS & LARGER SMARTPHONES) ================= */
+@media only screen and (max-width: 768px) {
+  .navigation__intro {
+    grid-template-columns: 35% 65%;
+  }
+
+  .navigation__links {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding-top: 5rem;
+    width: 60%;
+    padding-bottom: 45rem;
+    height: 1000%;
+    background: var(--primary-accent);
+  }
+
+  .navigation__more {
+    display: inline;
+  }
+
+  .navigation__close {
+    display: inline;
+  }
+
+  .navigation__head {
+    justify-content: flex-start;
+  }
+
+  .active {
+    color: var(--primary-color-dark);
+    background: var(--color-white);
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5%;
+    padding: 5%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .navigation__intro {
     grid-template-columns: 35% 65%;
+  }
+}
+
+/* ================ MEDIA QUERIES (EXTRA SMALL DEVICES) ================= */
+@media only screen and (max-width: 380px) {
+  .navigation__intro {
+    grid-template-columns: 35% 65%;
+    width: 45%;
   }
 }
