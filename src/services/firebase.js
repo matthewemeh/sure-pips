@@ -4,7 +4,6 @@ import { getFirestore } from 'firebase/firestore';
 const firebaseConfig = {
   apiKey: 'AIzaSyCU-Yd56V-zClyOtKe1gibz-NGpyE0SIqg',
   authDomain: 'sure-pips-95bc0.firebaseapp.com',
-  // databaseURL: "https://fantasypredictor-23888.firebaseio.com",
   projectId: 'sure-pips-95bc0',
   storageBucket: 'sure-pips-95bc0.appspot.com',
   messagingSenderId: '316720799872',
