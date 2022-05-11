@@ -33,7 +33,6 @@ nav a {
   font-size: 1rem;
   padding: 0.1rem;
   margin: auto;
-  cursor: pointer;
   color: var(--color-white);
   transition: var(--transition2);
 }
@@ -87,6 +86,7 @@ nav a {
 @media only screen and (max-width: 768px) {
   .navigation__intro {
     grid-template-columns: 35% 65%;
+    width: 50%;
   }
 
   .navigation__links {
@@ -124,20 +124,5 @@ nav a {
     border-radius: 5%;
     padding: 5%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
-  }
-}
-
-/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
-@media only screen and (max-width: 480px) {
-  .navigation__intro {
-    grid-template-columns: 35% 65%;
-  }
-}
-
-/* ================ MEDIA QUERIES (EXTRA SMALL DEVICES) ================= */
-@media only screen and (max-width: 380px) {
-  .navigation__intro {
-    grid-template-columns: 35% 65%;
-    width: 45%;
   }
 }

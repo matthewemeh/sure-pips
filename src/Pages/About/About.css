@@ -1,5 +1,5 @@
 .about {
-  margin-top: 15vh;
+  margin: 15vh 0 15vh;
   text-align: center;
 }
 
@@ -27,7 +27,7 @@
 .about__div {
   width: 60%;
   margin: 5% 20%;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
   transition: var(--transition);

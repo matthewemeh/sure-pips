@@ -6,6 +6,7 @@ import { GrFacebookOption } from 'react-icons/gr';
 import { MdOutlineGroupAdd } from 'react-icons/md';
 
 const Footer = props => {
+  const pages = '/history/about/faq';
   const socialLinks = props.socialInfo;
   const socials = socialLinks && [
     {
@@ -27,7 +28,8 @@ const Footer = props => {
   ];
 
   return (
-    socialLinks && (
+    socialLinks &&
+    pages.includes(window.location.pathname) && (
       <footer>
         <h2>Contact Us</h2>
         <div className='footer__socials' id='socials'>

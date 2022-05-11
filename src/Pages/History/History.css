@@ -1,5 +1,5 @@
 .history {
-  margin: 15vh 0 10vh;
+  margin: 15vh 0 15vh;
   text-align: center;
 }
 
@@ -37,6 +37,7 @@
 .history__results img {
   width: 50%;
   aspect-ratio: 1/2;
+  margin-bottom: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 12px 28px 0px rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),
     0 25px 20px -20px rgba(0, 0, 0, 0.45);

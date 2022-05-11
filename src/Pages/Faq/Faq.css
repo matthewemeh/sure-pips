@@ -1,5 +1,5 @@
 .faq {
-  margin-top: 15vh;
+  margin: 15vh 0 15vh;
 }
 
 .faq h2 {
@@ -37,7 +37,6 @@
   opacity: 0.75;
   word-spacing: 0.4rem;
   line-height: 1.5rem;
-  transition: var(--transition);
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
